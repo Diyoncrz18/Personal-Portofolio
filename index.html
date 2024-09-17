@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portofilio-Dion</title>
+    <title>Portofolio-Dion</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   </head>
   <body>
     <!-- Header -->
@@ -23,36 +24,32 @@
             </h2>
           </a>
         </div>
-      </nav>
-
-      <div class="nav_menu" id="nav_menu">
-        <button class="close_btn" id="close_btn">
-          <i class="fa fa-arrow-right"></i>
+        <div class="nav_menu" id="nav_menu">
+          <button class="close_btn" id="close_btn">
+            <i class="fa fa-arrow-right"></i>
+          </button>
+          <ul class="nav_menu_list">
+            <li class="nav_menu_item">
+              <a href="index.html" class="nav_menu_link">Beranda</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="tipe_rumah.html" class="nav_menu_link">Profile</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="tentang.html" class="nav_menu_link">Tentang Saya</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="kontak.html" class="nav_menu_link">Kontak</a>
+            </li>
+            <li class="nav_menu_item">
+              <a href="blog.html" class="nav_menu_link">Blog</a>
+            </li>
+          </ul>
+        </div>
+        <button class="toggle_btn" id="toggle_btn">
+          <i class="fa fa-bars"></i>
         </button>
-
-        <ul class="nav_menu_list">
-          <li class="nav_menu_item">
-            <a href="index.html" class="nav_menu_link">Beranda</a>
-          </li>
-          <li class="nav_menu_item">
-            <a href="tipe_rumah.html" class="nav_menu_link">tipe Rumah</a>
-          </li>
-          <li class="nav_menu_item">
-            <a href="tentang.html" class="nav_menu_link"
-              >Tentang Kami</a
-            >
-          </li>
-          <li class="nav_menu_item">
-            <a href="kontak.html" class="nav_menu_link">kontak</a>
-          </li>
-          <li class="nav_menu_item">
-            <a href="blog.html" class="nav_menu_link">Blog</a>
-          </li>
-        </ul>
-      </div>
-      <button class="toggle_btn" id="toggle_btn">
-        <i class="fa fa-bars"></i>
-      </button>
+      </nav>
     </header>
     <!-- Header -->
 
@@ -69,17 +66,20 @@
               mengunjungi portofolio pribadi saya. Di sini, Anda akan menemukan
               berbagai karya dan proyek yang saya kerjakan, serta informasi
               lebih lanjut tentang latar belakang dan keahlian saya. Sebagai
-              seorang Fron-End Developer, saya memiliki passion dalam
-              menciptakan solusi yang inovatif dan efektif. saya selalu berusaha
+              seorang Front-End Developer, saya memiliki passion dalam
+              menciptakan solusi yang inovatif dan efektif. Saya selalu berusaha
               untuk menghasilkan karya yang tidak hanya memenuhi, tetapi
               melebihi harapan klien.
             </p>
 
             <div class="btn_wrapper">
-              <button class="btn_home view_more_btn">Contact Me</button>
+              <button class="btn_home view_more_btn">
+                Contact Me <i class="fa fa-phone"></i>
+              </button>
+              <button class="btn_home documentation_btn">
+                Info Detail
+              </button>
             </div>
-
-            <button class="btn_home documentation_btn">Info Detail</button>
           </div>
           <div class="grid-item-2">
             <div class="team_img_wrapper">
@@ -89,5 +89,17 @@
         </div>
       </div>
     </section>
+    <!-- Section Beranda -->
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div>Dion Kobi</div>
+    </footer>
+    <!-- Footer -->
+
+    <!-- Script JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
   </body>
 </html>

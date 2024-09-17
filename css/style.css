@@ -91,7 +91,7 @@ button {
 }
 
 .menu_active {
-  color: aquamarine;
+  color: aquamarine !important;
 }
 
 .nav_menu_link:hover {
@@ -234,6 +234,18 @@ button {
   align-items: center;
   color: white;
 }
+
+footer {
+  background-color: #489dac;
+  padding: 10px 0;
+  text-align: center;
+  color: white;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+  position: fixed;
+}
 @media screen and (min-width: 768px) {
   .toggle_btn {
     display: none;
@@ -300,7 +312,7 @@ button {
   .wrapper-home {
     padding-top: 3rem;
   }
-  .grid-item-2{
+  .grid-item-2 {
     grid-template-columns: repeat(auto-fit, minmax(100%, 1fr));
   }
   .grid-item-1 {
